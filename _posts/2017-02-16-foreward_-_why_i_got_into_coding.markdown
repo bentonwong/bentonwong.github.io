@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Foreward - Why I Got Into Coding"
-date:   2017-02-16 20:01:41 +0000
+date:   2017-02-16 15:01:42 -0500
 ---
 
 ![*Around here, however, we don't look backwards for very long. We keep moving forward, opening up new doors and doing new things, because we're curious...and curiosity keeps leading us down new paths*. -Walt Disney](http://i.imgur.com/FeW7HWn.jpg[/img])
