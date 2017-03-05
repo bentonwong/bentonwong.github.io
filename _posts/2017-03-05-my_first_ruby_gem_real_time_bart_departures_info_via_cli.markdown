@@ -10,7 +10,7 @@ After a couple days of work, I created and published a gem that provides real ti
 **What is BART?**
 
 ![](http://i.imgur.com/3MjQXPV.gif)
-Source: bart.gov
+### Source: bart.gov
 
 BART (http://www.bart.gov), which stands for Bay Area Rapid Transit, is the elevated and subway train system serving the San Francisco Bay Area. As a convenience provided to its riders, BART pushes real time departure information on its website so riders may see when the next trains are arriving at a specific BART station (see: https://www.bart.gov/schedules/eta).
 
@@ -21,7 +21,7 @@ To make this information more readily accessible, I wrote a Ruby CLI application
 Although mobile apps and the bart.gov website are available, riders only have to type in 2 word strings into a CLI to pull real time BART train data:  (1) users would type “gobart”,  (2), they type in the 4 letter code for their desired station. And voila, the real time departure data for all the trains at the particular station are displayed for the user.  The user also sees additional information about their station such as advisories, number of trains running systemwide, see recent searches, and optional station information.  This gem is geared more for frequent BART riders who do not want to miss their train nor do they want to wait around at the station, while having this information accessible at their fingertips.
 
 ![](http://i.imgur.com/9dzDV1o.jpg)
-Source: Benton Wong
+### Source: Benton Wong
 
 **The Process**
 
