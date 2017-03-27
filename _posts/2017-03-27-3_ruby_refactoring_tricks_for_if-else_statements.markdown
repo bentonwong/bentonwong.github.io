@@ -27,7 +27,7 @@ The ternary operator is an operator that can collapse the above if-else statemen
 
 The format for this operator is: 
 
-*{conditional expression} ? {execute this statement if true} : {otherwise do this}*
+`*{conditional expression} ? {execute this statement if true} : {otherwise do this}*`
 
 The expressions here can be something other than returning true or false.  It can be a snippet of executable code (e.g. calling a particular method or a certain view in Sinatra). 
 
