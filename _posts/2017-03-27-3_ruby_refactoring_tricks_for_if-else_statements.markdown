@@ -16,7 +16,6 @@ An area where code can be easily refactored are if-else statements.  If-else sta
 	end
 
 	# => false
-	
 
 Writing this method longhand results in minimum 5 lines of code. Let’s attempt to reduce it, and perhaps eliminate the use of “if” and “else” altogether.
 	
