@@ -37,12 +37,12 @@ The expressions here can be something other than returning true or false.  It ca
 
 In instances where one needs to explicitly convert any value into a boolean statement, the double bang is an easy way to do this.  Taking the example above, we can reduce:
 ```
- 	variable ? true : false
+variable ? true : false
 ```
 
 to
 ```
-  !!variable
+!!variable
 ```
 
 How does this work? A single “!” negates the variable and forces it to return either true or false, based on it boolean value.  Doing a double negation cancels out the first negation, thus returning the variable’s natural boolean value.
@@ -57,10 +57,10 @@ The traditional, longhand way to write this statement is:
 
 This can be reduced from 3 lines to 1 line with this format:
 
-	*{expression to be evaluated if condition is true} if {condition}*
+*{expression to be evaluated if condition is true} if {condition}*
 
 Applying this format here, the above example would be re-written as:
 ```
-	puts z if x == y
+puts z if x == y
 ```
 
