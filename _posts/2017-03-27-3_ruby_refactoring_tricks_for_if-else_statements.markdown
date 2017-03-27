@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "3 Ruby Refactoring Tricks for If-Else Statements"
-date:   2017-03-27 05:46:07 +0000
+date:   2017-03-27 01:46:08 -0400
 ---
 
 
 An area where code can be easily refactored are if-else statements.  If-else statements lends itself to code bloat.  For example, if one needs a block to explicitly return true or false to determine if some variable is “nil”, we could write:
 
-```
+
 	variable = nil
 	if variable
 	 true
@@ -16,7 +16,7 @@ An area where code can be easily refactored are if-else statements.  If-else sta
 	end
 
 	# => false
-	```
+	
 
 Writing this method longhand results in minimum 5 lines of code. Let’s attempt to reduce it, and perhaps eliminate the use of “if” and “else” altogether.
 	
@@ -47,11 +47,11 @@ How does this work? A single “!” negates the variable and forces it to retur
 ## 3) BONUS: Single line if-then statement
 
 The traditional, longhand way to write this statement is:
-```
+
 	if x == y
 	 puts z
 	end
-```
+
 This can be reduced from 3 lines to 1 line with this format:
 
 	{expression to be evaluated if condition is true} if {condition}
