@@ -27,9 +27,9 @@ variable ? true : false	#=>false
 ```
 
 The format for this operator is: 
-```
-{conditional expression} ? {execute this statement if true} : {otherwise do this}
-```
+
+*{conditional expression} ? {execute this statement if true} : {otherwise do this}*
+
 
 The expressions here can be something other than returning true or false.  It can be a snippet of executable code (e.g. calling a particular method or a certain view in Sinatra). 
 
@@ -56,9 +56,8 @@ The traditional, longhand way to write this statement is:
 	end
 
 This can be reduced from 3 lines to 1 line with this format:
-```
-	{expression to be evaluated if condition is true} if {condition}
-```
+
+	*{expression to be evaluated if condition is true} if {condition}*
 
 Applying this format here, the above example would be re-written as:
 ```
