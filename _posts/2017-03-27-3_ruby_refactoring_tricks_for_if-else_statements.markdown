@@ -19,8 +19,8 @@ An area where code can be easily refactored are if-else statements.  If-else sta
 
 Writing this method longhand results in minimum 5 lines of code. Let’s attempt to reduce it, and perhaps eliminate the use of “if” and “else” altogether.
 	
-**1. Use a ternary operator
-**
+**1. Use a ternary operator**
+
 The ternary operator is an operator that can collapse the above if-else statement into 1 line:
 
  `variable ? true : false	#=>false`
