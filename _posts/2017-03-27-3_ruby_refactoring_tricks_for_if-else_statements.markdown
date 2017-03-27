@@ -23,7 +23,7 @@ Writing this method longhand results in minimum 5 lines of code. Let’s attempt
 
 The ternary operator is an operator that can collapse the above if-else statement into 1 line:
 
- `variable ? true : false	#=>false`
+variable ? true : false	#=>false
 
 The format for this operator is: 
 
@@ -35,7 +35,7 @@ The expressions here can be something other than returning true or false.  It ca
 
 In instances where one needs to explicitly convert any value into a boolean statement, the double bang is an easy way to do this.  Taking the example above, we can reduce:
 
- 	`variable ? true : false`
+ 	variable ? true : false
 
 to
 
