@@ -19,7 +19,7 @@ An area where code can be easily refactored are if-else statements.  If-else sta
 
 Writing this method longhand results in minimum 5 lines of code. Let’s attempt to reduce it, and perhaps eliminate the use of “if” and “else” altogether.
 	
-## 1. Use a ternary operator
+# 1. Use a ternary operator
 
 The ternary operator is an operator that can collapse the above if-else statement into 1 line:
 
@@ -31,19 +31,19 @@ The format for this operator is:
 
 The expressions here can be something other than returning true or false.  It can be a snippet of executable code (e.g. calling a particular method or a certain view in Sinatra). 
 
-## 2) Apply a “!!” (aka the “Double Bang”)
+# 2) Apply a “!!” (aka the “Double Bang”)
 
 In instances where one needs to explicitly convert any value into a boolean statement, the double bang is an easy way to do this.  Taking the example above, we can reduce:
 
- 	variable ? true : false
+ 	`variable ? true : false`
 
 to
 
-	!!variable
+	`!!variable`
 
 How does this work? A single “!” negates the variable and forces it to return either true or false, based on it boolean value.  Doing a double negation cancels out the first negation, thus returning the variable’s natural boolean value.
 
-## 3) BONUS: Single line if-then statement
+# 3) BONUS: Single line if-then statement
 
 The traditional, longhand way to write this statement is:
 
@@ -53,9 +53,9 @@ The traditional, longhand way to write this statement is:
 
 This can be reduced from 3 lines to 1 line with this format:
 
-	{expression to be evaluated if condition is true} if {condition}
+	`{expression to be evaluated if condition is true} if {condition}`
 
 Applying this format here, the above example would be re-written as:
 
-	puts z if x == y
+	`puts z if x == y`
 
