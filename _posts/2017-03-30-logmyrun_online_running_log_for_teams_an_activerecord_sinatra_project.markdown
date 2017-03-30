@@ -4,7 +4,7 @@ title:  "LogMyRun Online Running Log for Teams | An ActiveRecord/Sinatra Project
 date:   2017-03-30 17:23:56 -0400
 ---
 
-![](http://i.imgur.com/cQ47Yck.png)![](http://i.imgur.com/Dlaapk8.png)
+![](http://i.imgur.com/cQ47Yck.png)
 
 **Description**
 
@@ -33,6 +33,8 @@ The application uses a model, view, controller structure.  Breaking it down:
 2. Runners Controller - controls the sign up, log in, and log out processes
 3. Workouts Controller - controls the creation, viewing, edit, and deletion of workouts plus display of the leaderboard
 4. Concerns/Helpers - methods pertaining to security and querying database for certain workouts
+
+![](http://i.imgur.com/Dlaapk8.png)
 
 **Relationship between Runner and Workout objects**
 
