@@ -4,6 +4,8 @@ title:  "LogMyRun Online Running Log for Teams | An ActiveRecord/Sinatra Project
 date:   2017-03-30 17:23:56 -0400
 ---
 
+![](http://i.imgur.com/cQ47Yck.png)![](http://i.imgur.com/Dlaapk8.png)
+
 **Description**
 
 [LogMyRun](https://github.com/bentonwong/sinatra-team-running-log) is an online running log I recently developed for running teams and clubs.  Runners log their workouts through their private, secure accounts.  When logging a run, runners enter workout's dates, mileage, and relevant notes.  In addition, runners can view their activity history, and edit and delete their workouts.
