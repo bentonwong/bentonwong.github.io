@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "LogMyRun Online Running Log for Teams | An ActiveRecord/Sinatra Project"
-date:   2017-03-30 21:23:55 +0000
+date:   2017-03-30 17:23:56 -0400
 ---
 
 **Description**
@@ -22,7 +22,9 @@ The application uses a model, view, controller structure.  Breaking it down:
 2. Workouts - stores information about the workouts (e.g. date, distance, notes)
 
 * Views:
+
 Landing Page (user login and signup)
+
 Runners
 1. Login
 2. Signup
@@ -46,7 +48,7 @@ Under models, each runner has many workouts, and a workout belongs to a single r
 
 For example, many of the workouts view pages utilize this relationship to display the name attribute of the runner alongside their workout data.
 
-In the team leaderboard, the two objects work together even more.  The leaderboard divides up all the runners by gender.  This requires connecting the runner’s gender attribute to workouts.  ActiveRecord queries the database to return workouts for a certain gender and time frame.  
+In the team leaderboard, the two objects work together even more. The leaderboard divides up all the runners by gender.  This requires connecting the runner’s gender attribute to workouts. ActiveRecord queries the database to return workouts for a certain gender and time frame.  
 
 Using ActiveRecord’s WHERE method was perfect for this task to return the correct workouts for the requested gender and time frame:
 
