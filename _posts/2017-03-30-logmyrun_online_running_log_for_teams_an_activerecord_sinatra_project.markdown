@@ -21,20 +21,10 @@ The application uses a model, view, controller structure.  Breaking it down:
 1. Runner - stores information about the runner (e.g. name, email, password, gender)
 2. Workouts - stores information about the workouts (e.g. date, distance, notes)
 
-* Views:
-
-Landing Page (user login and signup)
-
-Runners
-1. Login
-2. Signup
-
-Workouts
-1. Workouts Index (user’s homepage after logging in)
-2. Create New Workout
-3. Show Workout
-4. Edit Workouts
-5. Leaderboard
+* Views
+1. Landing Page (user login and signup)
+2. Runners Views
+3. Workouts Views
 
 * Controllers
 1. Application Controller (entry point)
