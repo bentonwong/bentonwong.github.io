@@ -16,9 +16,9 @@ This is useful to coaches to track their athletes training and to athletes to mo
 ![](http://i.imgur.com/cQ47Yck.png)
 #### Fig. 1 - A runner's mileage log page
 
-**Application Structure**
+**Application Framework**
 
-The application uses a model, view, controller structure.  Breaking it down:
+The application uses a Model-View-Controller (MVC) framework.  Breaking it down:
 
 * Models 
 1. Runner - stores information about the runner (e.g. name, email, password, gender)
