@@ -14,7 +14,7 @@ Users can view the running logs of other athletes on the platform.  Using the co
 This is useful to coaches to track their athletes training and to athletes to motivate each other.
 
 ![](http://i.imgur.com/cQ47Yck.png)
-###Fig. 1 - A runner's mileage log page
+#### Fig. 1 - A runner's mileage log page
 
 **Application Structure**
 
@@ -36,7 +36,7 @@ The application uses a model, view, controller structure.  Breaking it down:
 4. Concerns/Helpers - methods pertaining to security and querying database for certain workouts
 
 ![](http://i.imgur.com/Dlaapk8.png)
-###Fig. 2 - Team leaderboard page
+#### Fig. 2 - Team leaderboard page
 
 **Relationship between Runner and Workout objects**
 
