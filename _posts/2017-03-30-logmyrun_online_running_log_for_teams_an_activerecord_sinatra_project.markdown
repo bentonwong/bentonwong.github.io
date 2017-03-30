@@ -5,6 +5,7 @@ date:   2017-03-30 17:23:56 -0400
 ---
 
 ![](http://i.imgur.com/cQ47Yck.png)
+Fig. 1 - A runner's mileage log page
 
 **Description**
 
@@ -35,6 +36,7 @@ The application uses a model, view, controller structure.  Breaking it down:
 4. Concerns/Helpers - methods pertaining to security and querying database for certain workouts
 
 ![](http://i.imgur.com/Dlaapk8.png)
+Fig. 2 - Team leaderboard page
 
 **Relationship between Runner and Workout objects**
 
