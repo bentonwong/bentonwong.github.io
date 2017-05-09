@@ -14,11 +14,7 @@ I found several, easy to follow guides on implementing Google Oauth into a Rails
 1. [https://richonrails.com/articles/google-authentication-in-ruby-on-rails/](https://richonrails.com/articles/google-authentication-in-ruby-on-rails/)
 2. [http://www.jessespevack.com/blog/2016/10/16/how-to-test-drive-omniauth-google-oauth2-for-your-rails-app](https://richonrails.com/articles/google-authentication-in-ruby-on-rails/)
 
-However, such guides do not go into detail on integrating OAuth alongside a typical login/signup authentication system.
-
-# The Process
-
-I developed this general process below to handle login/sign ups through either channels:
+However, such guides do not go into detail on integrating OAuth alongside a typical login/signup authentication system. I developed this general process below to handle login/sign ups through either channels:
 
 1) Determine if a provider (in this case, Google) is given in the params (e.g. !params[:provider].nil?) passed in by the new session request.  I noticed that OAuth generates params with provider, while the normal login/signup does not.  Therefore, the process checks for this first:
 
@@ -84,8 +80,6 @@ def start_new_session
    redirect_to @lawyer
 end
 ```
-
-# Final Thoughts
 
 Because of the abstract nature of Devise, I built my own authentication system with a `has_secure_password` requirement in the user model and `password_digest` column in the users table. It made studying and debugging the application easier.
 
