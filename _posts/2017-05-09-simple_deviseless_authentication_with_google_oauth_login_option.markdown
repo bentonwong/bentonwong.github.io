@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Simple Deviseless Authentication with Google OAuth Login Option"
-date:   2017-05-09 21:40:35 +0000
+date:   2017-05-09 17:40:35 -0400
 ---
 
 
@@ -16,7 +16,7 @@ I found several, easy to follow guides on implementing Google Oauth into a Rails
 
 However, such guides do not go into detail on integrating OAuth alongside a typical login/signup authentication system.
 
-## The Process
+# The Process
 
 I developed this general process below to handle login/sign ups through either channels:
 
@@ -78,17 +78,15 @@ def validate_signin
       redirect_to_signin_form_with_errors('ALERT: Email and/or password are incorrect!')
    end
 end
+
+def start_new_session
+   session.clear
+   session[:lawyer_id] = @lawyer.id
+   redirect_to @lawyer
+end
 ```
 
- ```
- def start_new_session
-    session.clear
-    session[:lawyer_id] = @lawyer.id
-    redirect_to @lawyer
- end
- ```
-
-## Final Thoughts
+# Final Thoughts
 
 Because of the abstract nature of Devise, I built my own authentication system with a `has_secure_password` requirement in the user model and `password_digest` column in the users table. It made studying and debugging the application easier.
 
