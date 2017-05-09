@@ -22,7 +22,8 @@ I developed this general process below to handle login/sign ups through either c
 
 1) Determine if a provider (in this case, Google) is given in the params (e.g. !params[:provider].nil?) passed in by the new session request.  I noticed that OAuth generates params with provider, while the normal login/signup does not.  Therefore, the process checks for this first:
 
-``` def create
+```
+def create
     if !params[:provider].nil?
       validate_oauth
     elsif params[:lawyer][:email].blank? || params[:lawyer][:password].blank?
@@ -30,11 +31,13 @@ I developed this general process below to handle login/sign ups through either c
     else
       validate_signin
     end
-end```
+end
+```
 
 2) If params[:provider] is not nil, I would then pass the params hash onto a method to see if the lawyer already exists in the database; a new lawyer would be created if none existed or update that existing lawyer with information passed in through Google.  And then, a new session would be started if successful.
 
-```def validate_oauth
+```
+def validate_oauth
    @lawyer = Lawyer.update_or_create(env["omniauth.auth"])
     if @lawyer
        start_new_session
@@ -55,7 +58,8 @@ def self.update_or_create(auth)
     }
     lawyer.save!
     lawyer
-  end```
+  end
+	```
 	
 
 3) To accommodate the situation where the lawyer has already set a password from a previous session or the lawyer never sets a password because they have always logged in via OAuth, I used this snippet to generate a random password if no password for the lawyer existed:
@@ -64,7 +68,8 @@ def self.update_or_create(auth)
 
 4) On the other hand, if params[:provider] is found to be nil, then the authentication process would be directed to the standard log in/sign up process below.
 
-```def validate_signin
+```
+def validate_signin
    @lawyer = Lawyer.find_by(email: params[:lawyer][:email])
    if !!@lawyer && @lawyer.authenticate(params[:lawyer][:password])
       start_new_session
@@ -77,7 +82,8 @@ def start_new_session
    session.clear
    session[:lawyer_id] = @lawyer.id
    redirect_to @lawyer
-end```
+end
+```
 
 # Final Thoughts
 
