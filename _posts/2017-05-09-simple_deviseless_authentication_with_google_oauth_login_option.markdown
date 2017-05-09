@@ -61,7 +61,7 @@ def self.update_or_create(auth)
     lawyer.save!
     lawyer
   end
-	```
+	
 
 3) To accommodate the situation where the lawyer has already set a password from a previous session or the lawyer never sets a password because they have always logged in via OAuth, I used this snippet to generate a random password if no password for the lawyer existed:
 
