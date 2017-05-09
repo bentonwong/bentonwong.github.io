@@ -11,8 +11,8 @@ The authentication employed here allows users to sign up and sign in using eithe
 
 I found several, easy to follow guides on implementing Google Oauth into a Rails in my initial research; here are two, well written ones:
 
-1. https://richonrails.com/articles/google-authentication-in-ruby-on-rails/
-2. http://www.jessespevack.com/blog/2016/10/16/how-to-test-drive-omniauth-google-oauth2-for-your-rails-app
+1. [https://richonrails.com/articles/google-authentication-in-ruby-on-rails/](https://richonrails.com/articles/google-authentication-in-ruby-on-rails/)
+2. [http://www.jessespevack.com/blog/2016/10/16/how-to-test-drive-omniauth-google-oauth2-for-your-rails-app](https://richonrails.com/articles/google-authentication-in-ruby-on-rails/)
 
 However, such guides do not go into detail on integrating OAuth alongside a typical login/signup authentication system.
 
