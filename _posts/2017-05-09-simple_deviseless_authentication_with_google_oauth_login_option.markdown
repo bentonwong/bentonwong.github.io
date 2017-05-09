@@ -20,7 +20,7 @@ However, such guides do not go into detail on integrating OAuth alongside a typi
 
 I developed this general process below to handle login/sign ups through either channels:
 
-1. Determine if a provider (in this case, Google) is given in the params (e.g. !params[:provider].nil?) passed in by the new session request.  I noticed that OAuth generates params with provider, while the normal login/signup does not.  Therefore, the process checks for this first:
+1) Determine if a provider (in this case, Google) is given in the params (e.g. !params[:provider].nil?) passed in by the new session request.  I noticed that OAuth generates params with provider, while the normal login/signup does not.  Therefore, the process checks for this first:
 
 ``` 
 def create
@@ -34,7 +34,7 @@ def create
 end
 ```
 
-2. If params[:provider] is not nil, I would then pass the params hash onto a method to see if the lawyer already exists in the database; a new lawyer would be created if none existed or update that existing lawyer with information passed in through Google.  And then, a new session would be started if successful.
+2) If params[:provider] is not nil, I would then pass the params hash onto a method to see if the lawyer already exists in the database; a new lawyer would be created if none existed or update that existing lawyer with information passed in through Google.  And then, a new session would be started if successful.
 
 ```
 def validate_oauth
@@ -63,11 +63,11 @@ def self.update_or_create(auth)
   end
 	```
 
-3. To accommodate the situation where the lawyer has already set a password from a previous session or the lawyer never sets a password because they have always logged in via OAuth, I used this snippet to generate a random password if no password for the lawyer existed:
+3) To accommodate the situation where the lawyer has already set a password from a previous session or the lawyer never sets a password because they have always logged in via OAuth, I used this snippet to generate a random password if no password for the lawyer existed:
 
 `lawyer.password = SecureRandom.hex(9) if !lawyer.password_digest`
 
-4. On the other hand, if params[:provider] is found to be nil, then the authentication process would be directed to the standard log in/sign up process below.
+4) On the other hand, if params[:provider] is found to be nil, then the authentication process would be directed to the standard log in/sign up process below.
 
 ```
 def validate_signin
