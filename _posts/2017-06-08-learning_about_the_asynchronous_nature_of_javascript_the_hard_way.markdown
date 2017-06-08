@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Learning about the asynchronous nature of Javascript the hard way"
-date:   2017-06-08 23:17:30 +0000
+date:   2017-06-08 19:17:31 -0400
 ---
 
 
@@ -28,7 +28,7 @@ analyzePreviousGame();
 };
 ```
 
-Functions loadTable() and analyzePreviousGame() are dependent on board to properly work.  It worked, but not perfectly and had some noticeable hiccups similar to the issues described above.
+Functions *loadTable()* and *analyzePreviousGame()* are dependent on *board* to properly work.  It worked, but not perfectly and had some noticeable hiccups similar to the issues described above.
 
 What smoothed out those issues was moving those subsequent functions into the AJAX request’s .done callback option:
 
