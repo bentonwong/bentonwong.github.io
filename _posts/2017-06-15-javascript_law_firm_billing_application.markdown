@@ -1,13 +1,16 @@
 ---
 layout: post
 title:  "Javascript Law Firm Billing Application"
-date:   2017-06-15 02:42:10 +0000
+date:   2017-06-14 22:42:10 -0400
 ---
 
 
-## Summary
+**Summary**
+
 I recently had the opportunity to improve on my earlier [Rails Law Firm Billing](https://github.com/bentonwong/law-firm-billing-software) application by adding Javascript features to it [here](https://github.com/bentonwong/js-law-firm-billing-software).  The Javascript improvements utilizes jQuery, AJAX, and Active Model Serialization to provide APIs allowing the application to render JSON data in response to an AJAX request.  These new front end features allow for a more dynamic user experience where certain pages are updated without a page reload.
-## New Javascript Features
+
+**New Javascript Features**
+
 *Displaying Client Profiles*
 * Allows users to sift (i.e. navigate to the next client) through a collection of clients from a client's show page; no page reload is required to display the next client, and is rendered by making an AJAX get request and the response is displayed using a handlebars template.
 * A concatenate feature takes the two separate client phone and email data fields and merging them into one line with appropriate labels; this feature is a method on the JS prototype of the client's model object.
@@ -23,7 +26,8 @@ I recently had the opportunity to improve on my earlier [Rails Law Firm Billing]
 * New time entries can be entered directly on that matter's show page and those new entries, if valid, are appended to the list without a page reload.
 * Responses from every successful AJAX requests are translated into a model, and a method on each time entry prototype instantaneously calculates the attorney fee on that time entry object, which is then appended to the end of each time entry row.
 
-## Process
+**Process**
+
 I broke this project into 3 steps:
 1. Plan out the new Javascript features by reviewing the original Rails application and making decisions on where to implement the new features.
 
