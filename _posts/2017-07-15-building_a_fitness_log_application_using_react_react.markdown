@@ -48,6 +48,6 @@ Problem: The documentation to set up the Pagination component was not entirely c
 
 Solution: There is a great YouTube video [here](https://www.youtube.com/watch?v=2qxNVzmiR8Y&t=415s) that shows how to do much of the initial pagination setup. However, some of the latter steps are now obsolete since my application was using react-router v4 and query parsing was no longer supported by it.  After doing additional research, I found two relevant stackoverflow discussions on the topic [here](https://stackoverflow.com/questions/44676551/this-props-dispatch-is-not-a-function-in-react-js-component-file) and [here](https://stackoverflow.com/questions/44673079/cannot-read-property-query-of-null-in-react-js).
 
-## Notes
+**Notes**
 
 This was a challenging project because it was full stack application requiring Rails, React, Redux, Javascript, HTML CSS.  I learned a lot from the process and I was very pleased with the result.  Although it seemed overwhelming at times, I just had to be patience and take each part step by step.
