@@ -72,7 +72,7 @@ FROM Books
 RIGHT OUTER JOIN Authors
 ON Books.author_id = Authors.id;
 ```
-Since we are using a RIGHT JOIN, all Author names will be displayed regardless of whether there is an associated book or not in the Books table.
+all Author names and any associated books will be displayed regardless of whether there is an associated book or not in the Books table.
 
 **Getting a list of any books and any authors via Full Outer Join**
 
