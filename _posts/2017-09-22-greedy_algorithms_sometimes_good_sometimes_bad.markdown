@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Greedy Algorithms: Sometimes Good, Sometimes Bad"
-date:   2017-09-22 23:29:46 +0000
+date:   2017-09-22 19:29:47 -0400
 ---
 
 We often make immediate decisions based on the best choice available to us (e.g. whether to eat extra dessert, buy the new iPhone X, etc.) at the moment and ignore the effect on the future (e.g. having to exercise more to burn it off, higher credit card bill, etc.).  Although this approach sounds imprudent, impulsive, and may be against our long term interests, we do it because it is easier to analyze, make decisions quicker, and receive immediate gratification.  Sometimes this approach results in an optimal overall solution, but sometimes it does not.
@@ -42,7 +42,7 @@ Despite some of the short comings of this approach, there are several use cases 
 
 *Approach*
 
-2. 1. Create a frequency histogram for each unique character and make each character and its frequency value a leaf node
+1. Create a frequency histogram for each unique character and make each character and its frequency value a leaf node
 2. Sort leaves by frequency in ascending order and add them to a new heap
 3. Select the first two nodes and remove from that heap with the lowest frequencies and create an new internal node that is the sum of the first two nodes.  The lowest value node (the first one) becomes the left child and the next lowest value (the second one) becomes the right child.
 4. Return the new internal node into the heap and resort
