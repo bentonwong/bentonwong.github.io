@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Interesting applications for XOR"
-date:   2017-09-29 19:46:57 +0000
+date:   2017-09-29 15:46:58 -0400
 ---
 
 
