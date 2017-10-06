@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Efficient Palindrome Detection Algorithms"
-date:       2017-10-06 18:56:32 +0000
+date:       2017-10-06 14:56:33 -0400
 permalink:  efficient_palindrome_detection_algorithms
 ---
 
