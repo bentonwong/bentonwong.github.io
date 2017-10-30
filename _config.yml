@@ -4,7 +4,7 @@ header-img: img/home-bg.png
 email: bentonwong@gmail.com
 copyright_name: bentonwong
 description: > # this means to ignore newlines until "baseurl:"
-  Learn New Things, Explore Opportunities, and Not Look Back
+  Learning New Things and Exploring Opportunities
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  bentonwong
