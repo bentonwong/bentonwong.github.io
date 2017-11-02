@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Quick Comparison of Common Data Structures"
-date:       2017-11-02 00:24:41 +0000
+date:       2017-11-01 20:24:42 -0400
 permalink:  quick_comparison_of_common_data_structures
 ---
 
