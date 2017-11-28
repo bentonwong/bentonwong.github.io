@@ -6,7 +6,7 @@ permalink:  using_javascript_debugger_in_javascript_on_code_editors_e_g_ide_atom
 ---
 
 
-Debugging in JavaScript within code editors can be difficult without a running console.  Most would just run tests to see if their code worked or not. It is not efficient as it take takes time to run the test(s) and it still does not entirely help pinpoint where the bug is located inside the code.
+Debugging in JavaScript within code editors can be difficult without a running console.  Most would just run tests to see if their code worked or not. It is not efficient as it takes time to run the test(s) and it still does not entirely help pinpoint where the bug is located inside the code.
 
 JavaScript has a debugger option which can be used even inside a code editor without having to jump over to Chrome to use its developer tools or a go to sites such as JSFiddle or repl.it.  It is just a matter of taking a few extra steps.
 
