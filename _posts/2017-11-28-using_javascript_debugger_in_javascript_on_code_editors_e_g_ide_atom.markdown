@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Using JavaScript 'debugger' in JavaScript on Code Editors (e.g. IDE/Atom)"
+title:      "Using JavaScript 'debugger' on Code Editors (e.g. IDE/Atom)"
 date:       2017-11-28 14:35:57 -0500
 permalink:  using_javascript_debugger_in_javascript_on_code_editors_e_g_ide_atom
 ---
