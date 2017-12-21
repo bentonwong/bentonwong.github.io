@@ -18,7 +18,7 @@ Before ES6, ```var``` was the only way to declare a variable.  When a ```var``` 
 
 ![](https://i.imgur.com/BfbgtbZ.png)
 
-Source: MDN web docs - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#Description
+Source: MDN web docs - [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#Description](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#Description)
 
 ```let``` variables have "as their scope the block in which they are defined, as well as in any contained sub-blocks", according to the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#Description ).  This keeps the code of inner functions cleaner and more separate from the outer function in which those ```let``` variables are used.
 
@@ -26,4 +26,4 @@ Source: MDN web docs - https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
  
  ![](https://i.imgur.com/y2j8gVn.png)
  
- Source: MDN web docs - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#Description
+ Source: MDN web docs - [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#Description](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#Description)
