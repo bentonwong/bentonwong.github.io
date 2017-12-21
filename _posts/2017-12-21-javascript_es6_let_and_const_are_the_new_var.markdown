@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "JavaScript ES6:  ```let``` and ```const``` are the new ```var```"
-date:       2017-12-21 20:06:02 +0000
+title:      "JavaScript ES6:  LET and CONST are the new VAR"
+date:       2017-12-21 15:06:03 -0500
 permalink:  javascript_es6_let_and_const_are_the_new_var
 ---
 
