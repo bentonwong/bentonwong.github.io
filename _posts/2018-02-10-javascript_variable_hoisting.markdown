@@ -1,12 +1,12 @@
 ---
 layout: post
 title:      "JavaScript Variable Hoisting"
-date:       2018-02-10 06:15:36 +0000
+date:       2018-02-10 01:15:37 -0500
 permalink:  javascript_variable_hoisting
 ---
 
 
-Hoisting is a behavior in JavaScript that moves variable declaration to the top of their scope before that code is executed.  However, any variable assignment to that same variable is not hoisted.  For example,
+Hoisting is a behavior in JavaScript that moves a variable declaration to the top of its scope before that code is executed.  However, any variable assignment to that same variable is not hoisted.  For example,
 
 ```
 console.log(value);
