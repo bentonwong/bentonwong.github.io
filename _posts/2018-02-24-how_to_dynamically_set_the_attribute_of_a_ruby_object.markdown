@@ -16,6 +16,7 @@ There are a couple instance methods that can take in as arguments, the name of t
 
 **#instance_variable_set** | https://apidock.com/ruby/Object/instance_variable_set
 
+
 ```
 attribute = "@#{name}".to_sym
 your_object.instance_variable_set(attribute, value)
@@ -25,6 +26,7 @@ or
 your_object.instance_variable_set(:@attribute, 'value')
 ```
 
-**#send ** | [https://apidock.com/ruby/Object/send](https://apidock.com/ruby/Object/send)
+
+**#send** | [https://apidock.com/ruby/Object/send](https://apidock.com/ruby/Object/send)
 
 `your_obj.send("#{attribute}=", attribute)`
