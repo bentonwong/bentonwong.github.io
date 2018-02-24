@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "How to Dynamically Set the Attribute of a Ruby Object"
-date:       2018-02-24 23:32:30 +0000
+date:       2018-02-24 18:32:31 -0500
 permalink:  how_to_dynamically_set_the_attribute_of_a_ruby_object
 ---
 
