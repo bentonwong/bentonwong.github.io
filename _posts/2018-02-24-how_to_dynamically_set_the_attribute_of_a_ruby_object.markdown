@@ -29,4 +29,4 @@ your_object.instance_variable_set(:@attribute, 'value')
 
 **#send** | [https://apidock.com/ruby/Object/send](https://apidock.com/ruby/Object/send)
 
-`your_obj.send("#{attribute}=", attribute)`
+```your_obj.send("#{attribute}=", attribute)```
