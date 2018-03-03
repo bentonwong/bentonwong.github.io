@@ -1,14 +1,14 @@
 ---
 layout: post
 title:      "Javascript: ‘Undefined’ vs. ‘Null’"
-date:       2018-03-03 06:05:30 +0000
+date:       2018-03-03 01:05:31 -0500
 permalink:  javascript_undefined_vs_null
 ---
 
 
 `Undefined` and `null` may feel similar, as they both relate to absence.  They both produce falsey values. 
 
-However, in JavaScript, these concepts are not exactly the same.  According to the [MDN documentation ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined), it states: “null is not equivalent to undefined.”  Using a strict equality operator, we can prove that they are not exactly the same:
+However, in JavaScript, these concepts are not exactly the same.  According to the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined), it states: “null is not equivalent to undefined.”  Using a strict equality operator, we can prove that they are not exactly the same:
 
 ```
 let x = null
