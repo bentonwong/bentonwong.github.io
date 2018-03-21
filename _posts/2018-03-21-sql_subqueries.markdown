@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "SQL Subqueries"
-date:       2018-03-21 19:20:45 +0000
+date:       2018-03-21 15:20:47 -0400
 permalink:  sql_subqueries
 ---
 
