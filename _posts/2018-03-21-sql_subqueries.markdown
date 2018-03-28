@@ -84,7 +84,7 @@ INNER_JOIN revenue ON release.id = revenue.release_id
 WHERE release.year > 2000 AND revenue.amount > 1000000;
 ```
 
-This should return a list of movie_ids that match the above conditions.  Now in order to return the list of movies that meet this condition, we can use it as a subquery in there WHERE clause along with IN to have the outer query return only those titles with movie_ids that were provided by the subquery:
+This should return a list of movie_ids that match the above conditions.  Now in order to return the list of movies that meet this condition, we can use it as a subquery in the WHERE clause along with IN to have the outer query return only those titles with movie_ids that were provided by the subquery:
 
 ```
 SELECT title
