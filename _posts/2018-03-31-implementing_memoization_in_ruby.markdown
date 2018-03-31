@@ -1,14 +1,14 @@
 ---
 layout: post
 title:      "Implementing Memoization in Ruby"
-date:       2018-03-31 05:23:10 +0000
+date:       2018-03-31 01:23:11 -0400
 permalink:  implementing_memoization_in_ruby
 ---
 
 
 Memoization, a process of caching previously computed values, is very useful for avoiding duplication of work and can reduce the runtime of functions.  
 
-In Ruby, memoization is commonly used with the conditional assignment operator (||=) and can be easily implemented in many common algorithms. This work can include duplicated database calls and repetitive calculations with the same input.
+In Ruby, memoization is commonly used with the conditional assignment operator (`||=`) and can be easily implemented in many common algorithms. This work can include duplicated database calls and repetitive calculations with the same input.
 
 **Reducing database calls**
 
@@ -22,9 +22,9 @@ def current_user
 end
 ```
 
-With the ||= operator, if current_user is nil, then User.find_by will query the database for a user that matches the session id and (hopefully) return the matching user instance and set the current_user to that instance.  Thereafter, current_user will store that value and will always return that value until the value in current_user is cleared out.
+With the `||=` operator, if current_user is nil, then User.find_by will query the database for a user that matches the session id and (hopefully) return the matching user instance and set the current_user to that instance.  Thereafter, current_user will store that value and will always return that value until the value in current_user is cleared out.
 
-Without the ||= operator, other methods that rely on current_user will slow down because they have to wait for the database call to complete before continuing.  When current_user is called many times throughout a session, these delays add up and result in a poor user experience.
+Without the `||=` operator, other methods that rely on current_user will slow down because they have to wait for the database call to complete before continuing.  When current_user is called many times throughout a session, these delays add up and result in a poor user experience.
 
 **Reducing repetitive calculations**
 
@@ -52,6 +52,6 @@ def fib(n, memo={})
 end
 ```
 
-By using the ||= operator to immediately return the previously queried nth number in the Fibonacci sequence from a hash that has been accumulating these values, the runtime decreases dramatically.  This is because a hash has a constant runtime, in which the lookup time remains the same as the number of hash values increases.  By adding some simple memoization to this recursive method, memoization vastly improves its performance from very slow recursive runtime of n^2.
+By using the `||=` operator to immediately return the previously queried nth number in the Fibonacci sequence from a hash that has been accumulating these values, the runtime decreases dramatically.  This is because a hash has a constant runtime, in which the lookup time remains the same as the number of hash values increases.  By adding some simple memoization to this recursive method, memoization vastly improves its performance from very slow recursive runtime of n^2.
 
 
