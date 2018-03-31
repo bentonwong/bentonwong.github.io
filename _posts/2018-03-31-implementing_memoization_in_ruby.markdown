@@ -40,7 +40,7 @@ def fib(n)
 end
 ```
 
-Memoization can be easily applied here:
+To speed things up, memoization can be easily applied here:
 
 ```
 def fib(n, memo={})
