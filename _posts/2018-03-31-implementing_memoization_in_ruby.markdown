@@ -52,6 +52,6 @@ def fib(n, memo={})
 end
 ```
 
-By using the `||=` operator to immediately return the previously queried nth number in the Fibonacci sequence from a hash that has been accumulating these values, the runtime decreases dramatically.  This is because a hash has a constant runtime, in which the lookup time remains the same as the number of hash values increases.  By adding some simple memoization to this recursive method, memoization vastly improves its performance from very slow recursive runtime of n^2.
+By using the `||=` operator to immediately return the previously queried nth number in the Fibonacci sequence from a hash that has been accumulating these values, the runtime decreases dramatically.  This is because a hash has a constant runtime, in which the lookup time remains the same as the number of hash values increases.  By adding some simple memoization to this recursive method, memoization vastly improves its performance from a very slow recursive runtime of n^2.
 
 
